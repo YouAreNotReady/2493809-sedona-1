@@ -45,6 +45,7 @@ body {
 }
 
 .button {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -332,6 +333,9 @@ body {
 }
 
 .newsletter-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 96px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -340,7 +344,7 @@ body {
 
 .newsletter-description {
   width: 475px;
-  margin: 0 auto;
+  margin: 0 auto 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -350,22 +354,30 @@ body {
   display: flex;
   width: 684px;
   margin: 0 auto;
+  padding-bottom: 104px;
+  border: none;
 }
 
 .email-input {
-  width: 452px;
+  min-width: 452px;
+  height: 52px;
+  padding: 14px 20px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
+  border: none;
 }
 
 .button-subscribe {
-  width: 232px;
+  display: block;
+  flex-grow: 1;
+  height: 52px;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
   background-color: #82B3D3;
+  border: none;
 }
 
 /* Footer */
