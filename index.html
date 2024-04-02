@@ -9,49 +9,50 @@
   </head>
 
   <body>
-    <header class="page-header page-container">
-      <a href="index.html">
-        <img class="page-logo" src="images/sedona-logo.svg" alt="Логотип сайта «Город Седона»." width="140" height="70">
-      </a>
-      <nav class="navigation-site">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="navigation-user">
-        <ul class="navigation-list user-menu-list">
-          <li class="navigation-user-item">
-            <a class="navigation-link navigation-user-link" href="#">
-              <img class="search-icon" src="images/search.svg" alt="" width="18" height="18">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-link navigation-user-link" href="#">
-             <div class="favorite-wrapper">
-                <img class="favorite-icon" src="images/favorite.svg" alt="" width="18" height="17">
-                <span class="favorite-count">12</span>
-              </div>
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="button button-modal" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-container">
+      <header class="page-header page-container">
+        <a class="page-logo-link" href="index.html">
+          <img class="page-logo" src="images/sedona-logo.svg" alt="Логотип сайта «Город Седона»." width="140" height="70">
+        </a>
+        <nav class="navigation-site">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navigation-user">
+          <ul class="user-menu-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <img class="search-icon" src="images/search.svg" alt="" width="18" height="18">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+              <div class="favorite-wrapper">
+                  <img class="favorite-icon" src="images/favorite.svg" alt="" width="18" height="17">
+                  <span class="favorite-count">12</span>
+                </div>
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="button button-modal" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="main-container main-index">
-      <div class="page-container">
+      <main class="main-container main-index">
+
         <section class="hero">
           <h1 class="visually-hidden">Почему вы должны посетить Седону?</h1>
           <div class="hero-image">
@@ -147,17 +148,15 @@
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
-    </main>
 
-    <footer class="page-footer">
-      <div class="page-footer-container">
-        <!-- атрибут hidden добавлен временно, пока нет visually-hidden -->
-        <h2 class="visually-hidden" hidden>Контакты</h2>
+      </main>
+
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Контакты</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-item-link" href="https://vk.com/htmlacademy">
-              <img class="social-item-logo" src="images/footer/vk-logo.svg" alt="ВКонтакте." width="24" height="14">
+             <img class="social-item-logo" src="images/footer/vk-logo.svg" alt="ВКонтакте." width="24" height="14">
             </a>
           </li>
           <li class="social-item">
@@ -177,7 +176,8 @@
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" src="images/footer/html-academy-logo.svg" alt="Логотип «html academy»." width="115" height="33">
         </a>
-      </div>
-    </footer>
+
+      </footer>
+    </div>
   </body>
 </html>
