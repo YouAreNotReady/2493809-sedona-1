@@ -291,11 +291,17 @@ body {
 
 /* Hotel search */
 
+.hotel-search {
+  margin-bottom: 96px;
+}
+
 .hotel-search-text-wrapper {
   text-align: center;
 }
 
 .hotel-search-upper {
+  display: block;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -305,13 +311,14 @@ body {
 
 .hotel-search-main {
   width: 592px;
-  margin: 0 auto;
+  margin: 0 auto 54px;
   font-size: 22px;
   line-height: 26px;
 }
 
 .button-search {
   margin: 0 auto;
+  padding: 8px 50px;
 }
 
 /* Newsletter */
