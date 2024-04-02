@@ -144,11 +144,17 @@ body {
   width: 160px;
 }
 
+/* Hero */
+
+.hero-image {
+  display: block;
+}
+
 /* Features */
 
 .features-main-title {
   width: 620px;
-  margin: 0 auto;
+  margin: 69px auto 25px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -157,6 +163,8 @@ body {
 }
 
 .features-subtitle {
+  margin: 0;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -170,10 +178,12 @@ body {
 
 .features-list-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-item {
   width: calc(100% / 3);
+  min-height: 385px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -185,6 +195,7 @@ body {
 .features-item-illustrated {
   display: flex;
   width: 100%;
+  align-items: center;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -194,12 +205,13 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 .features-title {
   width: 175px;
-  margin: 0 auto;
+  margin: 0 auto 62px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
