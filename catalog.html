@@ -52,7 +52,6 @@
       </header>
 
       <main class="main-catalog">
-
         <section class="hotels-filter">
           <header class="catalog-header">
             <h1 class="catalog-header-title">Гостиницы Седоны</h1>
@@ -106,14 +105,14 @@
                   </label>
                 </li>
 
-                <li class="catalog-filter-item">
+                <li class="hotels-filter-item">
                   <label class="radio">
                     <input class="radio-input" type="radio" name="lodging-type" value="motel">
                     <span class="radio-name">Мотель</span>
                   </label>
                 </li>
 
-                <li class="catalog-filter-item">
+                <li class="hotels-filter-item">
                   <label class="radio">
                     <input class="radio-input" type="radio" name="lodging-type" value="apartment">
                     <span class="radio-name">Апартаменты</span>
@@ -122,15 +121,17 @@
               </ul>
             </fieldset>
 
-            <fieldset class="hotels-filter-group">
+            <fieldset class="hotels-filter-group hotels-cost-filter-group">
               <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-              <div class="textbox">
-                <input class="textbox-input" id="textbox-from" type="text" name="start-range" value="0">
-                <label class="textbox-name" for="textbox-from">От</label>
-              </div>
-              <div class="textbox">
-                <input class="textbox-input" id="textbox-to" type="text" name="end-range" value="9000">
-                <label class="textbox-name" for="textbox-to">До</label>
+              <div class="textbox-wrapper">
+                <div class="textbox">
+                  <input class="textbox-input" id="textbox-from" type="text" name="start-range" value="0">
+                  <label class="textbox-name" for="textbox-from">От</label>
+                </div>
+                <div class="textbox">
+                  <input class="textbox-input" id="textbox-to" type="text" name="end-range" value="9000">
+                  <label class="textbox-name" for="textbox-to">До</label>
+                </div>
               </div>
             </fieldset>
             <div class="hotels-filter-buttons">
