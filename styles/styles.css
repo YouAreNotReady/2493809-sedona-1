@@ -23,20 +23,23 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+
   background-color: #F2F2F2;
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
+
   background-color: #FFFFFF;
 }
 
@@ -46,19 +49,22 @@ body {
 
 .button {
   display: block;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: #FFFFFF;
+
   background-color: #756157;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .button-big {
   display: block;
   width: 376px;
+
   font-size: 20px;
   line-height: 36px;
 }
@@ -79,18 +85,20 @@ body {
 /* Header */
 
 .page-header {
-  margin: 0 auto;
-  padding: 0 70px;
   display: flex;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 70px;
+
   background-color: #FFFFFF;
 }
 
 .page-logo-link {
+  z-index: 1;
+
   display: block;
   height: 70px;
   margin-bottom: -6px;
-  z-index: 1;
 }
 
 .navigation-site {
@@ -98,25 +106,27 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   min-width: 339px;
   max-width: 550px;
   min-height: 64px;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .navigation-link {
   display: block;
+  padding: 20px 16px;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
   text-decoration: none;
-  padding: 20px 16px;
+  color: #000000;
 }
 
 .navigation-user {
@@ -125,11 +135,12 @@ body {
 }
 
 .user-menu-list {
-  min-height: 64px;
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
+  min-height: 64px;
+  margin: 0;
+  padding: 0;
+
   list-style-type: none;
 }
 
@@ -140,9 +151,9 @@ body {
 
 .button-modal {
   display: block;
+  width: 160px;
   margin: 14px 20px;
   padding: 8px 34px;
-  width: 160px;
 }
 
 /* Hero */
@@ -160,16 +171,18 @@ body {
 .features-main-title {
   width: 620px;
   margin: 69px auto 25px;
+
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .features-subtitle {
   margin: 0;
   margin-bottom: 90px;
+
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -178,6 +191,7 @@ body {
 .features-list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -189,7 +203,9 @@ body {
 .features-item {
   width: calc(100% / 3);
   min-height: 385px;
+
   color: #000000;
+
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -199,9 +215,11 @@ body {
 
 .features-item-illustrated {
   display: flex;
-  width: 100%;
   align-items: center;
+  width: 100%;
+
   color: #FFFFFF;
+
   background-color: #82B3D3;
 }
 
@@ -211,12 +229,14 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
+
   text-align: center;
 }
 
 .features-title {
   width: 175px;
   margin: 0 auto 62px;
+
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -244,16 +264,18 @@ body {
 .promo-title {
   width: 505px;
   margin: 0 auto 20px;
+
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .promo-subtitle {
   width: 490px;
   margin: 0 auto 64px;
+
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -263,30 +285,33 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .promo-item {
-  width: 400px;
-  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 400px;
+  min-height: 385px;
 }
 
 .promo-item-title {
   margin: 0;
   margin-bottom: 30px;
+
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .promo-item-description {
   width: 230px;
   margin: 0 auto;
+
   text-align: center;
 }
 
@@ -303,16 +328,18 @@ body {
 .hotel-search-upper {
   display: block;
   margin-bottom: 20px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .hotel-search-main {
   width: 592px;
   margin: 0 auto 54px;
+
   font-size: 22px;
   line-height: 26px;
 }
@@ -326,6 +353,7 @@ body {
 
 .newsletter {
   color: #ffffff;
+
   background-color: #000000;
   background-image: url("../images/index/newsletter-background.jpg");
   background-size: 100% auto;
@@ -336,15 +364,17 @@ body {
   margin: 0;
   margin-bottom: 20px;
   padding-top: 96px;
+
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .newsletter-description {
   width: 475px;
   margin: 0 auto 54px;
+
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -355,6 +385,7 @@ body {
   width: 684px;
   margin: 0 auto;
   padding-bottom: 104px;
+
   border: none;
 }
 
@@ -362,9 +393,11 @@ body {
   min-width: 452px;
   height: 52px;
   padding: 14px 20px;
+
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+
   background-color: #F2F2F2;
   border: none;
 }
@@ -374,8 +407,10 @@ body {
   flex-grow: 1;
   height: 52px;
   padding: 8px 50px;
+
   font-size: 20px;
   line-height: 36px;
+
   background-color: #82B3D3;
   border: none;
 }
@@ -388,6 +423,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 45px 70px 35px;
+
   background-color: #FFFFFF;
 }
 
@@ -397,6 +433,7 @@ body {
   height: 40px;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -411,10 +448,11 @@ body {
 .footer-adress-phone {
   display: block;
   width: 331px;
+
   font-size: 40px;
   line-height: 40px;
-  color: #000000;
   text-decoration: none;
+  color: #000000;
 }
 
 /* Catalog */
@@ -422,7 +460,9 @@ body {
 
 .hotels-filter {
   padding: 35px 70px 70px;
+
   color: #ffffff;
+
   background-color: #000000;
   background-image: url("../images/catalog/catalog-header-background.jpg");
   background-size: 100% auto;
@@ -436,23 +476,26 @@ body {
 .catalog-header-title {
   margin: 0;
   margin-bottom: 8px;
+
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
+
   list-style-type: none;
 }
 
 .breadcrumbs-link {
   margin-right: 28px;
+
   font-size: 16px;
   line-height: 21px;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .hotels-filter-form {
@@ -464,6 +507,7 @@ body {
 .hotels-filter-group {
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -478,6 +522,7 @@ body {
 .hotels-filter-title {
   margin-bottom: 32px;
   padding: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -486,6 +531,7 @@ body {
 .hotels-filter-list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -499,6 +545,7 @@ body {
 
 .checkbox-name {
   margin-left: 16px;
+
   line-height: 23px;
 }
 
@@ -508,6 +555,7 @@ body {
 
 .radio-name {
   margin-left: 16px;
+
   line-height: 23px;
 }
 
@@ -529,10 +577,12 @@ body {
   width: 143px;
   height: 48px;
   padding: 12px 20px;
+
   font-family: inherit;
   font-size: inherit;
   line-height: 24px;
   font-weight: 700;
+
   border: none;
 }
 
@@ -542,45 +592,50 @@ body {
   height: 24px;
   margin-top: -35px;
   margin-left: 106px;
+
   line-height: 24px;
-  text-align: right;
   text-transform: lowercase;
+  text-align: right;
   color: #000000;
+
   opacity: 0.3;
 }
 
 .hotels-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 56px;
   margin-left: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
 .button-apply {
-  padding: 0;
   display: block;
+  padding: 0;
   width: 191px;
   height: 36px;
 
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  text-align: center;
-  background-color: #82B3D3;
   text-transform: uppercase;
+  text-align: center;
+
+  background-color: #82B3D3;
   border: none;
 }
 
 .button-reset {
-  padding: 0;
   display: block;
   width: 191px;
   height: 36px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+
   background-color: transparent;
   border: none;
 }
@@ -590,25 +645,27 @@ body {
 .search-result-header {
   display: flex;
   align-items: center;
-  padding: 50px 70px 40px;
   width: 100%;
+  padding: 50px 70px 40px;
 }
 
 .search-result-text {
-  margin: 0;
   width: 338px;
+  margin: 0;
   margin-right: 200px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .select-control {
-  margin-right: 70px;
   width: 292px;
   height: 49px;
+  margin-right: 70px;
+
   font-size: inherit;
   line-height: inherit;
   color: inherit;
@@ -616,8 +673,8 @@ body {
 
 .view-change-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 160px;
   margin-left: auto;
 }
@@ -630,11 +687,12 @@ body {
 
 .hotel-list {
   display: flex;
-  width: 1060px;
   flex-wrap: wrap;
   gap: 20px;
+  width: 1060px;
   margin: 0 auto 80px;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -642,6 +700,7 @@ body {
   width: 340px;
   min-height: 438px;
   padding: 20px;
+
   border: 1px solid #E6E6E6
 }
 
@@ -657,29 +716,30 @@ body {
 .hotel-card-title {
   margin: 0;
   margin-bottom: 16px;
+
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
 
 .hotel-card-info {
-  margin: 0;
-  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .hotel-card-buttons {
-  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .hotel-card-button {
-  padding-top: 8px;
-  padding-bottom: 8px;
   width: 140px;
   height: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button-favorite {
@@ -695,8 +755,10 @@ body {
   width: 140px;
   margin-left: auto;
   padding: 9px 22px 8px 23px;
+
   font-size: 16px;
   line-height: 20px;
+
   background-color: #F2F2F2;
 }
 
@@ -707,6 +769,7 @@ body {
   margin: 0;
   margin-left: 70px;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -719,17 +782,20 @@ body {
   width: 60px;
   height: 60px;
   padding: 11px 18px;
+
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-decoration: none;
   text-align: center;
   color: #FFFFFF;
+
   background-color: #82B3D3;
-  text-decoration: none;
 }
 
 .pagination-current {
   color: #000000;
+
   background-color: #F2F2F2;
 }
 
@@ -738,6 +804,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+
   background-color: transparent;
 }
 
