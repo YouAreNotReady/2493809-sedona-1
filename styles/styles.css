@@ -385,18 +385,27 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 35px;
   background-color: #FFFFFF;
 }
 
 .social-list {
   display: flex;
   width: 142px;
+  height: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.social-item {
+  padding: 12px;
+}
+
+.social-item-logo {
+  display: block;
 }
 
 .footer-adress-phone {
