@@ -208,10 +208,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.features-item:nth-child(3n) {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
 .features-item-illustrated {
   display: flex;
   align-items: center;
@@ -220,6 +216,10 @@ body {
   color: #FFFFFF;
 
   background-color: #82B3D3;
+}
+
+.features-item:nth-child(3n) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .features-item-text {
@@ -389,7 +389,7 @@ body {
 }
 
 .email-input {
-  min-width: 452px;
+  width: 452px;
   height: 52px;
   padding: 14px 20px;
 
@@ -403,9 +403,8 @@ body {
 
 .button-subscribe {
   display: block;
-  flex-grow: 1;
+  width: 232px;
   height: 52px;
-  padding: 8px 50px;
 
   font-size: 20px;
   line-height: 36px;
