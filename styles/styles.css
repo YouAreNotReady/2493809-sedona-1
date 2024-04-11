@@ -189,15 +189,12 @@ body {
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
-}
-
-.features-list-row {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .features-item {
@@ -209,7 +206,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.features-list-row .features-item:nth-child(2n) {
+.features-item:nth-child(3n) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
