@@ -149,8 +149,37 @@ body {
 }
 
 .navigation-user-link {
+  position: relative;
+
   display: block;
+  width: 44px;
+  height: 64px;
   padding: 22px 12px;
+}
+
+.navigation-user-link img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.favorite-count {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  height: 20px;
+
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+
+  background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 .button-modal {
