@@ -690,7 +690,7 @@ body {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   width: 1060px;
   margin: 0 auto 80px;
   padding: 0;
