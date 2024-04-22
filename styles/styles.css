@@ -95,12 +95,14 @@ body {
   background-color: #FFFFFF;
 }
 
-.page-logo-link {
+.page-logo {
   position: absolute;
   z-index: 1;
+}
 
+.page-logo-link {
   display: block;
-  height: 70px;
+  height: 64px;
 }
 
 .navigation-site {
