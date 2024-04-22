@@ -123,6 +123,8 @@ body {
 }
 
 .navigation-link {
+  position: relative;
+
   display: block;
   padding: 20px 16px;
 
@@ -131,6 +133,18 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+
+  height: 2px;
+
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-user {
