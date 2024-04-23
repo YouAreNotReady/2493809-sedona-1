@@ -342,6 +342,27 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.promo-item::before {
+  height: 75px;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+  content: "";
+}
+
+.promo-housing::before {
+  background-image: url("../images/index/house.svg");
+}
+
+.promo-food::before {
+  background-image: url("../images/index/food.svg");
+}
+
+.promo-gift::before {
+  background-image: url("../images/index/gift.svg");
+}
+
 .promo-title {
   width: 505px;
   margin: 0 auto 20px;
