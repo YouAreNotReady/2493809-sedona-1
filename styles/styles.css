@@ -940,6 +940,7 @@ body {
   line-height: 20px;
 
   background-color: #F2F2F2;
+  border-radius: 5px;
 }
 
 /* Pagination */
@@ -968,6 +969,7 @@ body {
   color: #FFFFFF;
 
   background-color: #82B3D3;
+  border-radius: 5px;
 }
 
 .pagination-current {
