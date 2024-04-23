@@ -296,12 +296,31 @@ body {
 }
 
 .features-title {
+  position: relative;
+
   width: 175px;
   margin: 0 auto 62px;
 
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.features-title::before {
+  position: absolute;
+  right: 58px;
+  bottom: -30px;
+  left: 58px;
+
+  width: 60px;
+  height: 2px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.features-item-illustrated .features-title::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .features-description {
