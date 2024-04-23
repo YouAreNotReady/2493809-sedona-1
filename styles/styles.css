@@ -74,6 +74,7 @@ body {
   color: #FFFFFF;
 
   background-color: #756157;
+  border-radius: 5px;
 }
 
 .button-big {
@@ -456,6 +457,8 @@ body {
 
   background-color: #82B3D3;
   border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* Footer */
