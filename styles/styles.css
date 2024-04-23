@@ -138,6 +138,7 @@ body {
 
 .navigation-link-current::before {
   position: absolute;
+  z-index: 1;
   right: 16px;
   bottom: -1px;
   left: 16px;
@@ -205,6 +206,22 @@ body {
 }
 
 /* Hero */
+.hero-image-wrapper {
+  position: relative;
+}
+
+.hero-image-wrapper::before {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 57px;
+
+  background-image: url("../images/index/divider.svg");
+  content: "";
+}
 
 .hero-image {
   display: block;
