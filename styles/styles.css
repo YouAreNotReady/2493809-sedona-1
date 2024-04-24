@@ -156,6 +156,10 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.navigation-link:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .navigation-link-current::before {
   position: absolute;
   z-index: 1;
@@ -201,6 +205,10 @@ body {
 
 .navigation-user-link:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-user-link:active {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .navigation-user-link:hover .user-icons {
