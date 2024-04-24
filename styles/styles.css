@@ -1098,7 +1098,7 @@ body {
   display: block;
   height: 17px;
 
-  background-image: url("/images/catalog/star.svg");
+  background-image: url("../images/catalog/star.svg");
   background-repeat: space;
   content: "";
 }
