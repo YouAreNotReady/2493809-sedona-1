@@ -694,6 +694,14 @@ body {
   color: inherit;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-item:first-child .breadcrumbs-link {
   width: 13px;
   height: 21px;
