@@ -1080,6 +1080,16 @@ body {
   border-radius: 5px;
 }
 
+.pagination-link:not(.pagination-current):not(.pagination-skip):hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:not(.pagination-current):not(.pagination-skip):active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82B3D3;
+}
+
 .pagination-current {
   color: #000000;
 
