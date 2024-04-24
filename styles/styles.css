@@ -77,6 +77,16 @@ body {
   border-radius: 5px;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
 .button-big {
   display: block;
   width: 376px;
@@ -104,6 +114,11 @@ body {
 .page-logo-link {
   display: block;
   height: 64px;
+}
+
+.page-logo-link:hover {
+  z-index: 1;
+  opacity: 0.8;
 }
 
 .navigation-site {
@@ -134,6 +149,10 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navigation-link-current::before {
@@ -177,6 +196,14 @@ body {
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.navigation-user-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-user-link:hover .user-icons {
+  fill: #83B3D3;
 }
 
 .favorite-count {
@@ -520,6 +547,16 @@ body {
   border-bottom-left-radius: 0;
 }
 
+.button-subscribe:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82B3D3;
+}
+
 /* Footer */
 
 .page-footer {
@@ -782,6 +819,16 @@ body {
   border: none;
 }
 
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82B3D3;
+}
+
 .button-reset {
   display: block;
   width: 191px;
@@ -795,6 +842,23 @@ body {
 
   background-color: transparent;
   border: none;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: transparent;
+}
+
+.button-reset:focus {
+
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
 }
 
 /* Search result */
@@ -926,7 +990,27 @@ body {
   background-color: #82B3D3;
 }
 
+.button-favorite:hover {
+  background-color: #68A2CA;
+}
+
+.button-favorite:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82B3D3;
+}
+
 .button-favorite-selected {
+  background-color: #7DB54F;
+}
+
+.button-favorite-selected:hover {
+  background-color: #6C9E42;
+}
+
+.button-favorite-selected:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #7DB54F;
 }
 
