@@ -579,8 +579,17 @@ body {
   list-style-type: none;
 }
 
-.social-item {
+.social-item-link {
+  display: block;
   padding: 12px;
+}
+
+.social-item-link:hover .social-item-logo {
+  fill: #68A2CA;
+}
+
+.social-item:active .social-item-logo {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .social-item-logo {
@@ -597,8 +606,24 @@ body {
   color: #000000;
 }
 
+.footer-adress-phone:hover {
+  color: #756157;
+}
+
+.footer-adress-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .htmlacademy-logo {
   display: block;
+}
+
+.htmlacademy-logo:hover {
+  fill: #756157;
+}
+
+.htmlacademy-logo:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Catalog */
@@ -856,7 +881,6 @@ body {
 }
 
 .button-reset:focus {
-
   box-shadow: inset 0 0 0 3px #83B3D3;
   outline: none;
 }
