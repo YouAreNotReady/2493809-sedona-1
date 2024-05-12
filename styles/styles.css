@@ -1102,12 +1102,11 @@ body {
 .hotel-card-rating-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 300px;
 }
 
-.hotel-card-rating {
-  position: relative;
-
+.hotel-card-rating-text {
   display: block;
   width: 140px;
   margin-left: auto;
@@ -1115,32 +1114,29 @@ body {
 
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 
   background-color: #F2F2F2;
   border-radius: 5px;
 }
 
-.hotel-card-rating::before {
-  position: absolute;
-  left: -160px;
-
+.hotel-card-rating {
   display: block;
   height: 17px;
 
   background-image: url("../images/catalog/star.svg");
   background-repeat: space;
-  content: "";
 }
 
-.hotel-card-rating.hotel-card-rating-four::before {
+.hotel-card-rating.hotel-card-rating-four {
   width: 88px;
 }
 
-.hotel-card-rating.hotel-card-rating-three::before {
+.hotel-card-rating.hotel-card-rating-three {
   width: 65px;
 }
 
-.hotel-card-rating.hotel-card-rating-two::before {
+.hotel-card-rating.hotel-card-rating-two {
   width: 43px;
 }
 
