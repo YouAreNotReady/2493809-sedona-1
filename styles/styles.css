@@ -604,6 +604,7 @@ body {
 
 .social-list {
   display: flex;
+  align-items: center;
   width: 142px;
   height: 40px;
   margin: 0;
@@ -613,8 +614,10 @@ body {
 }
 
 .social-item-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  width: calc(142px / 3);
+  padding: 11px;
 }
 
 .social-item-link:hover .social-item-logo {
