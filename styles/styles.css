@@ -856,13 +856,14 @@ body {
 .hotels-filter-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   margin-top: 56px;
   margin-left: auto;
 }
 
 .button-apply {
   display: block;
+  margin-bottom: 32px;
   padding: 0;
   width: 191px;
   height: 36px;
