@@ -75,7 +75,7 @@ body {
   color: #FFFFFF;
 
   background-color: #756157;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -533,7 +533,7 @@ body {
 
 .newsletter-description {
   width: 475px;
-  margin: 0 auto 54px;
+  margin: 0 auto 55px;
 
   font-size: 22px;
   line-height: 26px;
@@ -561,8 +561,8 @@ body {
 
   background-color: #F2F2F2;
   border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .button-subscribe {
@@ -854,13 +854,13 @@ body {
 }
 
 .textbox:first-child .textbox-input {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .textbox:last-child .textbox-input {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .textbox-name {
@@ -987,7 +987,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   border: 2px solid #E5E5E5;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .select-control:hover {
@@ -1013,7 +1013,7 @@ body {
   padding: 15px 14px;
 
   border: 2px solid #E5E5E5;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .button-view:hover {
@@ -1058,6 +1058,7 @@ body {
   padding: 20px;
 
   border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
@@ -1148,7 +1149,7 @@ body {
   text-transform: uppercase;
 
   background-color: #F2F2F2;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .hotel-card-rating {
@@ -1198,7 +1199,7 @@ body {
   color: #FFFFFF;
 
   background-color: #82B3D3;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .pagination-link:not(.pagination-current):not(.pagination-skip):hover {
