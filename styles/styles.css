@@ -337,6 +337,7 @@ body {
 
   width: 175px;
   margin: 0 auto 62px;
+  padding-top: 102px;
 
   font-size: 24px;
   line-height: 28px;
@@ -363,16 +364,24 @@ body {
 .features-description {
   width: 230px;
   margin: 0 auto;
+  padding-bottom: 102px;
 }
 
 .features-item-image img {
   display: block;
+  height: auto;
+
+  object-fit: contain;
 }
 
 /* Promo */
 
 .promo {
   margin-bottom: 96px;
+}
+
+.promo-item {
+  padding: 81px 85px;
 }
 
 .promo-item:nth-child(2n - 1) {
