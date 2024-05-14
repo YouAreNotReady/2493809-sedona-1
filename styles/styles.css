@@ -542,6 +542,7 @@ body {
   height: 52px;
   padding: 14px 20px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -557,6 +558,7 @@ body {
   width: 232px;
   height: 52px;
 
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
 
