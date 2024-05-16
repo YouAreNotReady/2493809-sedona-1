@@ -847,10 +847,48 @@ body {
   margin: 0;
 }
 
-.radio-name {
-  margin-left: 16px;
+.radio {
+  position: relative;
+  display: block;
 
+  padding-left: 36px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.radio:hover .control-mark {
+  opacity: 0.6;
+}
+
+.radio:active .control-mark {
+  opacity: 0.3;
+}
+
+.radio-name {
   line-height: 23px;
+}
+
+.radio:hover .radio-name {
+  opacity: 0.6;
+}
+
+.radio:active .radio-name {
+  opacity: 0.3;
 }
 
 .hotels-cost-filter-group {
