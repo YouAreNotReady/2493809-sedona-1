@@ -790,14 +790,57 @@ body {
   list-style-type: none;
 }
 
-.checkbox-input {
-  margin: 0;
+.checkbox {
+  position: relative;
+  display: block;
+
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 1.5px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.checkbox:hover .control-mark {
+  opacity: 0.6;
+}
+
+.checkbox:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  width: 13px;
+  height: 10px;
+
+  background-image: url("../images/catalog/tick.svg");
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .checkbox-name {
-  margin-left: 16px;
-
   line-height: 23px;
+}
+
+.checkbox:hover .checkbox-name {
+  opacity: 0.6;
+}
+
+.checkbox:active .checkbox-name {
+  opacity: 0.3;
 }
 
 .checkbox .radio-input {
@@ -841,6 +884,7 @@ body {
   font-weight: 700;
 
   border: none;
+  background-color: #F2F2F2;
 }
 
 .textbox-input::-webkit-outer-spin-button,
