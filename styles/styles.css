@@ -620,7 +620,12 @@ body {
   padding: 11px;
 }
 
-.social-item-link:hover .social-item-logo {
+.social-item-link:focus {
+  outline: none;
+}
+
+.social-item-link:hover .social-item-logo,
+.social-item-link:focus .social-item-logo {
   fill: #68A2CA;
 }
 
@@ -646,6 +651,12 @@ body {
   color: #756157;
 }
 
+.footer-adress-phone:focus {
+  color: #756157;
+
+  outline: none;
+}
+
 .footer-adress-phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
@@ -655,6 +666,11 @@ body {
 }
 
 .htmlacademy-logo:hover {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus {
+  outline: none;
   fill: #756157;
 }
 
