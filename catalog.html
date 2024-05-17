@@ -142,15 +142,36 @@
 
             <fieldset class="hotels-filter-group hotels-cost-filter-group">
               <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-              <div class="textbox-wrapper">
-                <div class="textbox">
-                  <input class="textbox-input" id="textbox-from" type="number" name="start-range" value="0">
-                  <label class="textbox-name" for="textbox-from">От</label>
+              <div class="range">
+
+                <div class="range-wrapper-inputs">
+
+                  <div class="textbox-wrapper">
+                    <label class="textbox-name" for="textbox-from">От</label>
+                    <input class="textbox-input" id="textbox-from" type="number" name="start-range" value="0">
+                  </div>
+
+                  <div class="textbox-wrapper">
+                    <label class="textbox-name" for="textbox-to">До</label>
+                    <input class="textbox-input" id="textbox-to" type="number" name="end-range" value="9000">
+                  </div>
+
                 </div>
-                <div class="textbox">
-                  <input class="textbox-input" id="textbox-to" type="number" name="end-range" value="9000">
-                  <label class="textbox-name" for="textbox-to">До</label>
+
+                <div class="range-scale">
+
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+
                 </div>
+
               </div>
             </fieldset>
             <div class="hotels-filter-buttons">
