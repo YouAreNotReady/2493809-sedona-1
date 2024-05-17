@@ -1187,14 +1187,29 @@ body {
 /* Hotel list */
 
 .hotel-list {
+  position: relative;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1060px;
-  margin: 0 auto 80px;
+  margin: 0 auto 39px;
   padding: 0;
+  padding-bottom: 41px;
   gap: 20px;
 
   list-style-type: none;
+}
+
+.hotel-list::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+
+  background-color: #E6E6E6;
+  content: "";
 }
 
 .hotel-card {
