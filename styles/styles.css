@@ -89,6 +89,17 @@ body {
   background-color: #756157;
 }
 
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  color: #FFFFFF;
+
+  background-color: #E5E5E5;
+  cursor: default;
+}
+
 .button-big {
   display: block;
   width: 376px;
@@ -550,6 +561,8 @@ body {
 }
 
 .email-input {
+  z-index: 1;
+
   width: 452px;
   height: 52px;
   padding: 14px 20px;
@@ -563,6 +576,18 @@ body {
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.email-input:hover {
+  background-color: #E6E6E6;
+}
+
+.email-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.email-input:not(:placeholder-shown) {
+  outline: 2px solid #000000;
 }
 
 .button-subscribe {
@@ -678,6 +703,369 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+/* Modal window */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+
+  margin: auto;
+  padding: 64px 70px;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-hotel-search {
+  width: 717px;
+
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+
+  width: 52px;
+  height: 52px;
+  padding: 0;
+
+  background-color: #F2F2F2;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.field-group {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 577px;
+  height: 48px;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.search-form-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.date-input {
+  width: 440px;
+  height: 48px;
+  padding: 12px 20px;
+  padding-right: 40px;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  color: #000000;
+  background-image: url("../images/index/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.date-input::placeholder {
+  color: #000000;
+}
+
+.date-input:hover {
+  background-color: #E6E6E6;
+}
+
+.date-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.date-input:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+}
+
+.error-message {
+  position: absolute;
+  top: 100%;
+  left: 157px;
+
+  display: none;
+  margin-top: 4px;
+
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #FF5757;
+}
+
+.error-message-shown {
+  display: block;
+}
+
+.available-message {
+  position: absolute;
+  top: 100%;
+  left: 157px;
+
+  display: none;
+  margin-top: 4px;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.available-message-shown {
+  display: block;
+}
+
+.people-count-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people-count-wrapper .field-group:first-child {
+  width: 247px;
+}
+
+.people-count-wrapper .field-group:last-child {
+  width: 242px;
+  justify-content: flex-start;
+}
+
+.count-input-wrapper {
+  position: relative;
+}
+
+.count-input-wrapper svg {
+  position: absolute;
+
+  cursor: pointer;
+}
+
+.search-form-minus {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  fill: rgba(117, 97, 87, 0.3)
+}
+
+.search-form-plus {
+  top: 50%;
+  left: 81px;
+  transform: translateY(-50%);
+  fill: rgba(117, 97, 87, 0.3)
+}
+
+.count-input-wrapper svg:hover {
+  fill: #000000;
+}
+
+.count-input-wrapper svg:focus-visible {
+  box-shadow: 0 0 0 3px #82b3d3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.count-input-wrapper svg:active {
+  outline: none;
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.count-input {
+  width: 110px;
+  height: 48px;
+  padding: 14px 50px;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.count-input::placeholder {
+  color: #000000;
+}
+
+.count-input:hover {
+  background-color: #E6E6E6;
+}
+
+.count-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.count-input:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+}
+
+.count-input::-webkit-outer-spin-button,
+.count-input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.count-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.kid-count-label {
+  position: relative;
+
+  margin-right: 11px;
+}
+
+.tooltip {
+  position: relative;
+
+  margin-right: 46px;
+}
+
+.tooltip-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.tooltip-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  color: #242424;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #68A2CA;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+  width: 256px;
+  margin-top: 41px;
+  padding: 15px 18px 18px 22px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  background-color: #333333;
+  border-radius: 10px;
+
+  color: #ffffff;
+}
+
+.tooltip-text:after {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+
+  width: 19px;
+  height: 9px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../images/index/tooltip-arrow.svg");
+  content: '';
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.button-find {
+  width: 100%;
+  height: 60px;
+
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+}
+
+.button-find:hover {
+  background-color: #68A2CA;
+}
+
+.button-find:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82B3D3;
+}
+
+.button-find:focus {
+  outline: none;
+}
+
 /* Catalog */
 /* Hotels filter */
 
@@ -759,10 +1147,16 @@ body {
 
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
 }
 
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 
@@ -847,8 +1241,16 @@ body {
   content: "";
 }
 
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
 .checkbox-name {
   line-height: 23px;
+}
+
+.checkbox:hover {
+  cursor: pointer;
 }
 
 .checkbox:hover .checkbox-name {
@@ -885,6 +1287,14 @@ body {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.radio:hover {
+  cursor: pointer;
 }
 
 .radio:hover .control-mark {
@@ -960,6 +1370,15 @@ body {
 
 .textbox-input:focus-visible {
   outline: 3px solid #83B3D3;
+}
+
+.textbox-input::placeholder {
+  color: #000000;
+}
+
+.textbox-input:not(:placeholder-shown) {
+  border: 2px solid #000000;
+  outline: none;
 }
 
 .textbox-wrapper:first-child .textbox-input {
@@ -1048,7 +1467,6 @@ body {
 /* Filter buttons */
 
 .button-apply {
-  display: block;
   margin-bottom: 32px;
   padding: 0;
   width: 191px;
@@ -1107,6 +1525,14 @@ body {
   background-color: transparent;
 }
 
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
+
+  opacity: 1;
+  background-color: transparent;
+  cursor: default;
+}
+
 /* Search result */
 
 .search-result-header {
@@ -1153,11 +1579,17 @@ body {
 .select-control:hover,
 .select-control:focus-visible {
   border: 2px solid #68A2CA;
+  cursor: pointer;
   outline: none;
 }
 
 .select-control:active {
   border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0);
+  opacity: 0.3;
 }
 
 .view-change-wrapper {
