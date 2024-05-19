@@ -1157,6 +1157,8 @@ body {
 
 .breadcrumbs-link:focus-visible {
   outline: 3px solid #83B3D3;
+  outline-offset: 1px;
+  border-radius: 4px;
 }
 
 
