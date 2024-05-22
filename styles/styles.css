@@ -1096,6 +1096,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 21px;
   margin: 0;
