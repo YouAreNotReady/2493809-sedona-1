@@ -28,6 +28,7 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -125,8 +126,6 @@ body {
   font-size: 20px;
   line-height: 36px;
 }
-
-
 
 /* Header */
 
@@ -1075,8 +1074,10 @@ body {
   border-radius: 10px;
 }
 
-.button-find:hover {
+.button-find:hover,
+.button-find:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-find:active {
@@ -1085,9 +1086,7 @@ body {
   background-color: #82B3D3;
 }
 
-.button-find:focus {
-  outline: none;
-}
+
 
 /* Catalog */
 
@@ -1557,9 +1556,9 @@ body {
 .button-reset:disabled {
   color: rgba(255, 255, 255, 0.1);
 
-  opacity: 1;
   background-color: transparent;
   cursor: default;
+  opacity: 1;
 }
 
 /* Search result */
@@ -1595,6 +1594,7 @@ body {
   line-height: inherit;
   color: inherit;
 
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   background-image: url("../images/arrow-down.svg");

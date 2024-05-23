@@ -207,12 +207,12 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <p class="field-group">
               <label class="search-form-label" for="date-in">Дата Заезда:</label>
-              <input class="date-in-input date-input" type="text" id="date-in" name="date-in" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="date-in-input date-input" type="text" id="date-in" name="date-in" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="error-message error-message-shown">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label class="search-form-label" for="date-out">Дата Выезда:</label>
-              <input class="date-out-input date-input" type="text" id="date-out" name="date-out" placeholder="Укажите дату" value="1 сентября 2023">
+              <input class="date-out-input date-input" type="text" id="date-out" name="date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="available-message available-message-shown">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people-count-wrapper">
@@ -225,7 +225,7 @@
                   <svg class="search-form-plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
                   </svg>
-                  <input class="adult-count-input count-input" type="number" id="adult-count" name="adult-count" placeholder="2">
+                  <input class="adult-count-input count-input" type="number" id="adult-count" name="adult-count" placeholder="2" value="2" required>
                 </div>
               </div>
               <div class="field-group">
@@ -246,7 +246,7 @@
                   <svg class="search-form-plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
                   </svg>
-                  <input class="kid-count-input count-input" type="number" id="kid-count" name="kid-count" placeholder="2">
+                  <input class="kid-count-input count-input" type="number" id="kid-count" name="kid-count" placeholder="2" value="2" required>
                 </div>
               </div>
             </div>
