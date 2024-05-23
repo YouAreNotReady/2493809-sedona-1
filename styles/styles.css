@@ -79,8 +79,10 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .button:active {
@@ -89,15 +91,31 @@ body {
   background-color: #756157;
 }
 
-.button:focus {
-  outline: none;
-}
 
 .button:disabled {
   color: #FFFFFF;
 
   background-color: #E5E5E5;
   cursor: default;
+}
+
+.button-disabled {
+  color: #FFFFFF;
+
+  background-color: #E5E5E5;
+  cursor: default;
+}
+
+.button-disabled:hover {
+  background-color: #E5E5E5;
+}
+
+.button-disabled:focus {
+  background-color: #E5E5E5;
+}
+
+.button-disabled:active {
+  color: #FFFFFF;
 }
 
 .button-big {
@@ -238,7 +256,9 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 20px;
-  height: 20px;
+  min-height: 20px;
+  padding: 5px;
+
 
   font-size: 10px;
   line-height: 10px;
@@ -829,13 +849,14 @@ body {
 
 .date-input::placeholder {
   color: #000000;
+  opacity: 0.6;
 }
 
 .date-input:hover {
   background-color: #E6E6E6;
 }
 
-.date-input:focus {
+.date-input:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
