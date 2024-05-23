@@ -529,7 +529,7 @@ body {
 
   background-color: #000000;
   background-image: url("../images/index/newsletter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -595,7 +595,8 @@ body {
 .button-subscribe {
   display: block;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
+  padding: 8px 50px;
 
   font-family: inherit;
   font-size: 20px;
@@ -1472,10 +1473,10 @@ body {
 /* Filter buttons */
 
 .button-apply {
-  margin-bottom: 32px;
-  padding: 0;
   width: 191px;
-  height: 36px;
+  min-height: 36px;
+  margin-bottom: 32px;
+  padding: 8px 50px;
 
   font-family: inherit;
   font-size: 16px;
@@ -1501,8 +1502,8 @@ body {
 .button-reset {
   display: block;
   width: 191px;
-  height: 36px;
-  padding: 0;
+  min-height: 36px;
+  padding: 8px 50px;
 
   font-family: inherit;
   font-size: 16px;
@@ -1562,7 +1563,6 @@ body {
 .select-control {
   width: 292px;
   height: 49px;
-  margin-right: 70px;
   padding: 11px 18px;
   padding-right: 40px;
 
@@ -1711,9 +1711,8 @@ body {
 
 .hotel-card-button {
   width: 140px;
-  height: 36px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  min-height: 36px;
+  padding: 8px 18px;
 }
 
 .button-favorite {
@@ -1801,8 +1800,8 @@ body {
 
 .pagination-link {
   display: block;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 11px 18px;
 
   font-size: 20px;
