@@ -671,6 +671,7 @@ body {
 
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
   text-decoration: none;
   color: #000000;
 }
@@ -1758,6 +1759,7 @@ body {
 
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: #F2F2F2;
