@@ -284,7 +284,7 @@ body {
   position: absolute;
   z-index: 2;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   height: 57px;
