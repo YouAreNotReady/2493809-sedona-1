@@ -192,8 +192,8 @@ body {
 
 .user-menu-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 360px;
   min-height: 64px;
   margin: 0;
@@ -425,6 +425,7 @@ body {
 
 .promo-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -633,8 +634,9 @@ body {
 .social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 142px;
-  height: 40px;
+  min-height: 40px;
   margin: 0;
   padding: 0;
 
@@ -1098,8 +1100,8 @@ body {
 
 .breadcrumbs {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   height: 21px;
   margin: 0;
   padding: 0;
@@ -1600,10 +1602,11 @@ body {
 
 .view-change-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 160px;
   margin-left: auto;
+  gap: 8px;
 }
 
 .button-view {
