@@ -629,7 +629,8 @@ body {
   border-bottom-left-radius: 0;
 }
 
-.button-subscribe:hover {
+.button-subscribe:hover,
+.button-subscribe:focus {
   background-color: #68A2CA;
 }
 
@@ -1513,7 +1514,8 @@ body {
   border: none;
 }
 
-.button-apply:hover {
+.button-apply:hover,
+.button-apply:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -1539,14 +1541,15 @@ body {
   border: none;
 }
 
-.button-reset:hover {
+.button-reset:hover,
+.button-reset:focus {
   opacity: 0.6;
   background-color: transparent;
 }
 
 .button-reset:focus-visible {
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .button-reset:active {
@@ -1618,6 +1621,7 @@ body {
 
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0);
+  cursor: default;
   opacity: 0.3;
 }
 
@@ -1744,7 +1748,8 @@ body {
   background-color: #82B3D3;
 }
 
-.button-favorite:hover {
+.button-favorite:hover,
+.button-favorite:focus {
   background-color: #68A2CA;
 }
 
@@ -1758,7 +1763,8 @@ body {
   background-color: #7DB54F;
 }
 
-.button-favorite-selected:hover {
+.button-favorite-selected:hover,
+.button-favorite-selected:focus {
   background-color: #6C9E42;
 }
 
