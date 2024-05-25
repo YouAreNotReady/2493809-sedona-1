@@ -1394,17 +1394,12 @@ body {
   background-color: #E6E6E6;
 }
 
-.textbox-input:focus-visible {
-  outline: 3px solid #83B3D3;
+.textbox-input:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
 }
 
 .textbox-input::placeholder {
   color: #000000;
-}
-
-.textbox-input:not(:placeholder-shown) {
-  border: 2px solid #000000;
-  outline: none;
 }
 
 .textbox-wrapper:first-child .textbox-input {
@@ -1461,16 +1456,12 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background-color: #68A2CA;
+.range-toggle:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .range-toggle:active {
-  background-color: #82B3D3;
-}
-
-.range-toggle:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 2px solid #82B3D3;
 }
 
 .toggle-min {
