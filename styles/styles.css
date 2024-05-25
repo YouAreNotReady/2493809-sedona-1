@@ -851,12 +851,13 @@ body {
   background-color: #E6E6E6;
 }
 
-.date-input:focus-visible {
-  outline: 3px solid #83B3D3;
+.date-input:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
 }
 
-.date-input:not(:placeholder-shown) {
-  outline: 2px solid #000000;
+.date-input:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .error-message {
@@ -973,7 +974,7 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.count-input:not(:placeholder-shown) {
+.count-input:not(:placeholder-shown):focus {
   outline: 2px solid #000000;
 }
 
