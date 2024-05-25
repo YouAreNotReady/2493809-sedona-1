@@ -1668,18 +1668,7 @@ body {
   gap: 20px;
 
   list-style-type: none;
-}
-
-.hotel-list::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  height: 1px;
-
-  background-color: #E6E6E6;
-  content: "";
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card {
