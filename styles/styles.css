@@ -350,7 +350,7 @@ body {
   background-color: #82B3D3;
 }
 
-.features-item:nth-child(2n) {
+.features-item:not(.features-item-illustrated):nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -803,15 +803,13 @@ body {
 }
 
 .field-group {
-  position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 577px;
   height: 48px;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 4px;
 }
 
 .search-form-label {
@@ -861,12 +859,10 @@ body {
 }
 
 .error-message {
-  position: absolute;
-  top: 100%;
-  left: 157px;
-
   display: none;
-  margin-top: 4px;
+  margin-bottom: 23px;
+  margin-left: 137px;
+  padding: 0 20px;
 
   font-size: 16px;
   line-height: 21px;
@@ -879,12 +875,10 @@ body {
 }
 
 .available-message {
-  position: absolute;
-  top: 100%;
-  left: 157px;
-
   display: none;
-  margin-top: 4px;
+  margin-bottom: 23px;
+  margin-left: 137px;
+  padding: 0 20px;
 
   font-size: 16px;
   line-height: 21px;
@@ -897,6 +891,10 @@ body {
 .people-count-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.people-count-wrapper .field-group {
+  margin-bottom: 48px;
 }
 
 .people-count-wrapper .field-group:first-child {
