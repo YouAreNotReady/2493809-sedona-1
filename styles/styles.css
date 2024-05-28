@@ -1123,7 +1123,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  height: 21px;
+  min-height: 21px;
   margin: 0;
   padding: 0;
 
