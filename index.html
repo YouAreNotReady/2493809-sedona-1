@@ -220,12 +220,19 @@
               <div class="field-group">
                 <label class="search-form-label" for="adult-count">Взрослые:</label>
                 <div class="count-input-wrapper">
-                  <svg class="search-form-minus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-                    <path d="M3 9V11H17V9H3Z"/>
-                  </svg>
-                  <svg class="search-form-plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                  </svg>
+                  <button class="search-form-minus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                  </button>
+                  <button class="search-form-plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                  </button>
+
                   <input class="adult-count-input count-input" type="number" id="adult-count" name="adult-count" placeholder="2" value="2" required>
                 </div>
               </div>
@@ -241,12 +248,20 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-kid-count">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="count-input-wrapper">
-                  <svg class="search-form-minus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-                    <path d="M3 9V11H17V9H3Z"/>
-                  </svg>
-                  <svg class="search-form-plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" tabindex="0">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-                  </svg>
+                  <button class="search-form-minus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                  </button>
+
+                  <button class="search-form-plus" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество детей</span>
+                  </button>
+
                   <input class="kid-count-input count-input" type="number" id="kid-count" name="kid-count" placeholder="2" value="2" required>
                 </div>
               </div>
