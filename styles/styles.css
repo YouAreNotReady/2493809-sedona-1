@@ -1616,13 +1616,19 @@ body {
   opacity: 0.3;
 }
 
-.view-change-wrapper {
+.view-change-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 160px;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
   gap: 8px;
+}
+
+.view-change-item {
+  list-style-type: none;
 }
 
 .button-view {
@@ -1630,6 +1636,7 @@ body {
   height: 48px;
   padding: 15px 14px;
 
+  background-color: transparent;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
